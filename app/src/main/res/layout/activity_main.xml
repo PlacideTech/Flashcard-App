@@ -13,8 +13,12 @@
         android:layout_height="200dp"
         android:text="who is the 44th president of the united States?"
         android:textSize="40sp"
+        android:textColor="#000000"
         android:gravity="center"
-        android:background="@android:color/holo_red_dark"
+        android:background="@drawable/card_bachgroud"
+        android:elevation="20dp"
+
+
 
         />
 
@@ -28,5 +32,8 @@
         android:visibility="invisible"
         android:background="@android:color/holo_blue_dark"
         />
+
+
+
 
 </RelativeLayout>
