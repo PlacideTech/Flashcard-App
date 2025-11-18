@@ -5,35 +5,78 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#4169E1"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/flashcard_question"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:text="who is the 44th president of the united States?"
-        android:textSize="40sp"
-        android:textColor="#000000"
-        android:gravity="center"
         android:background="@drawable/card_bachgroud"
         android:elevation="20dp"
-
-
-
-        />
-
-    <TextView
-        android:id="@+id/flashcard_Answer"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="Barack Obama"
-        android:textSize="40sp"
         android:gravity="center"
-        android:visibility="invisible"
-        android:background="@android:color/holo_blue_dark"
+        android:text="who is the 44th president of the united States?"
+        android:textColor="#000000"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/ans_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Bill Clinton"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/ans_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:text="George H. W. Bush"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/ans_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Barack Obama"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Placide Frantzlot"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_menu_view"
         />
-
-
 
 
 </RelativeLayout>
